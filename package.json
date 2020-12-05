@@ -18,5 +18,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoisesSanchez2020/cs313-final-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MoisesSanchez2020/cs313-final-project/issues"
+  },
+  "homepage": "https://github.com/MoisesSanchez2020/cs313-final-project#readme"
 }

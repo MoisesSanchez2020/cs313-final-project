@@ -119,29 +119,29 @@ body {
     min-width: 24px
   }
   
-  .mobile .header>.title {
+  .header>.title {
     font-size: 16px;
     line-height: 24px;
     margin-left: 15px
   }
   
-  .mobile .header .pull-left {
+  .header .pull-left {
     float: left
   }
   
-  .mobile .header .pull-right {
+  .header .pull-right {
     float: right
   }
-  .mobile .header .ion-ios-search{
+  .header .ion-ios-search{
       z-index:999;
       position:relative;
   }
   
-  .mobile .header .ion-ios-arrow-back {
+   .header .ion-ios-arrow-back {
     min-width: 25px
   }
   
-  .mobile .header .ion-ios-navicon>i {
+  .header .ion-ios-navicon>i {
     height: 1px;
     width: 20px;
     margin-top: 5px;
@@ -150,8 +150,8 @@ body {
     display: inline-block
   }
   
-  .mobile .header .ion-ios-navicon>i:after,
-  .mobile .header .ion-ios-navicon>i:before {
+  .header .ion-ios-navicon>i:after,
+  .header .ion-ios-navicon>i:before {
     content: '';
     width: inherit;
     height: inherit;
@@ -159,19 +159,19 @@ body {
     background: inherit
   }
   
-  .mobile .header .ion-ios-navicon>i:before {
+  .header .ion-ios-navicon>i:before {
     bottom: 12px
   }
   
-  .mobile .header .ion-ios-navicon>i:after {
+   .header .ion-ios-navicon>i:after {
     bottom: 6px
   }
-  .mobile .header .search{
+  .header .search{
       right:0;
       bottom:0;
       position:absolute;
   }
-  .mobile .header .search input{
+  .header .search input{
       width:0;
       color:#fff;
       height:24px;
@@ -186,14 +186,14 @@ body {
       border-bottom:1px solid transparent;
       -webkit-appearance:textfield;
   }
-  .mobile .header .search input:focus{
+   .header .search input:focus{
       outline:none;
   }
-  .mobile .header .search input::-webkit-search-decoration,
-  .mobile .header .search input::-webkit-search-cancel-button {
+ .header .search input::-webkit-search-decoration,
+  .header .search input::-webkit-search-cancel-button {
       -webkit-appearance:none;
   }
-  .mobile .header .search .search-visible{
+ .search .search-visible{
       width:100%;
       border-bottom-color:#aaa;
   }

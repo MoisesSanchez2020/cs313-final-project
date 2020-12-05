@@ -95,14 +95,14 @@ h2 {
   align-items: center;
   color: rgb(7, 7, 7);
 }
-.widget .weatherInfo .temperature {
+ .weatherInfo .temperature {
   flex: 0 0 40%;
   width: 100%;
   font-size: 40px;
   display: flex;
   justify-content: space-around;
 }
-.widget .weatherInfo .description {
+ .weatherInfo .description {
   flex: 0 60%;
   display: flex;
   flex-direction: column;
@@ -110,12 +110,12 @@ h2 {
   height: 100%;
   justify-content: center;
 }
-.widget .weatherInfo .description .weatherCondition {
+ .description .weatherCondition {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 100;
 }
-.widget .weatherInfo .description .place {
+ .description .place {
   font-size: 45px;
 }
 .widget .date {

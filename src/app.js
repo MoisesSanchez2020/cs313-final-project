@@ -14,13 +14,6 @@ const viewsPath = path.join(__dirname, '../templates/views');
 
 const partialsPath = path.join(__dirname, '../templates/partials');
 
-app.use(express.static(__dirname + '/public'));
-
-// views is directory for all template files
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
-
-
 app.set('view engine', 'hbs');
 app.set('views', viewsPath);
 hbs.registerPartials(partialsPath);
@@ -28,7 +21,7 @@ app.use(express.static(publicStaticDirPath));
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Search your weather'
+        title: 'Weather App'
     })
 })
 
@@ -66,6 +59,4 @@ app.get("*", (req, res) => {
 app.listen(port, () => {
     console.log("Server is up and running on port: ", port);
 })
-
-
 
