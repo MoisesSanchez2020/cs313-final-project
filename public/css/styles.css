@@ -1,16 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
 /* $border-radius: 20px; */
-body {
-  color: #333333;
+/*body {
+  color: #0f0101;
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 750px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 16px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
+  background: url(https://raw.githubusercontent.com/khadkamhn/secret-project/master/img/background.jpg) center no-repeat;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19)
+  /*background-color: #250b0b;
+  
+  background-image: url(https://unsplash.imgix.net/uploads%2F14115408840644deb16b0%2F2dc933e3?q=75&fm=jpg&auto=format&s=7f43646e4d26049c6c39890afb2e5ced);*/
+
+
 
 .main-content {
   flex-grow: 1;
@@ -22,9 +29,12 @@ header {
 }
 
 h2 {
+  margin: 0 auto;
   font-size: 64px;
   margin-bottom: 16px;
 }
+
+
 
 
 .widget {
@@ -33,7 +43,7 @@ h2 {
   left: 50%;
   display: flex;
   height: 400px;
-  width: 900px;
+  width: 800px;
   transform: translate(-50%, -50%);
   flex-wrap: wrap;
   cursor: pointer;
@@ -48,12 +58,15 @@ h2 {
   justify-content: center;
   padding: 2rem;
   background-color: #fafafa;
+  background: linear-gradient(to bottom, rgb(251, 251, 253), rgba(233, 222, 222, 0.993));
 }
 
 .weatherLocation button{
   background: #080705;
   color:#fff;
   border: 1px solid transparent;
+
+  
 }
 .weatherLocation input:focus{
   outline: 0 none;
@@ -62,9 +75,8 @@ h2 {
 .widget .weatherIcon {
   flex: 1 100%;
   height: 60%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background: #FAFAFA;
+ 
+  background: linear-gradient(to bottom, rgb(251, 251, 255), rgba(250, 245, 245, 0.7));
   font-family: weathericons;
   display: flex;
   align-items: center;
@@ -77,16 +89,16 @@ h2 {
 .widget .weatherInfo {
   flex: 0 0 70%;
   height: 40%;
-  background: #f02720;
+  background: #d9fc40;
   border-bottom-left-radius: 20px;
   display: flex;
   align-items: center;
-  color: white;
+  color: rgb(7, 7, 7);
 }
 .widget .weatherInfo .temperature {
   flex: 0 0 40%;
   width: 100%;
-  font-size: 35px;
+  font-size: 40px;
   display: flex;
   justify-content: space-around;
 }
@@ -100,22 +112,22 @@ h2 {
 }
 .widget .weatherInfo .description .weatherCondition {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 100;
 }
 .widget .weatherInfo .description .place {
-  font-size: 15px;
+  font-size: 45px;
 }
 .widget .date {
   flex: 0 0 30%;
   height: 40%;
-  background: rgb(7, 10, 224);
+  background: rgb(126, 127, 212);
   border-bottom-right-radius: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: white;
-  font-size: 30px;
+  color: rgb(10, 10, 10);
+  font-size: 40px;
   font-weight: 800;
 }
 
@@ -128,4 +140,51 @@ p a {
   text-decoration: none;
   color: #E4D6A7;
   font-size: 10px;
+}
+input {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: textfield;
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 2px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
+button {
+  appearance: button;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(rgb(26, 4, 68), white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: -internal-light-dark(rgb(10, 10, 10), rgb(59, 59, 59));
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
 }

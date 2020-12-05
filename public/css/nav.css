@@ -1,0 +1,373 @@
+nav {
+	margin: 0 auto;
+	width: 100%;
+	background-color: #000;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: #fff;
+	padding: 0.95rem;
+	text-align: left;
+	text-decoration: none;
+}
+.navigation a:hover {
+	color: #000;
+	background-color: #fff;
+	font-weight: 700;
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+responsive li {
+	display: block;
+}
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 42.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+        color: rgb(252, 252, 249);
+        font-size: 20px;
+	}
+	
+	.navigation li:first-child {
+		display: none;
+	}
+}*
+
+
+/*  ----- new css --*/
+
+body {
+    background: rgba(90, 93, 165, .8);
+    /*font: 300 18px/18px Roboto;*/
+    background: linear-gradient(to bottom, rgba(90, 93, 165, 1), rgba(0, 0, 0, .7));
+  }
+  
+  *,
+  :after,
+  :before {
+    box-sizing: border-box
+  }
+  
+  .clearfix:after,
+  .clearfix:before {
+    content: '';
+    display: table
+  }
+  
+  .clearfix:after {
+    clear: both;
+    display: block
+  }
+  
+  .mobile-wrap {
+    margin: auto;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    /*background: url(https://raw.githubusercontent.com/khadkamhn/secret-project/master/img/background.jpg) center no-repeat;*/
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19)
+  }
+  
+  .mobile-wrap:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    background: rgba(90, 93, 165, .8);
+    background: linear-gradient(to bottom, rgba(90, 93, 165, 1), rgba(0, 0, 0, .7))
+  }
+  
+  .mobile {
+    z-index: 99;
+    color: #fff;
+    height: 100%;
+    padding: 15px;
+    position: relative
+  }
+  
+  .mobile .header {
+    clear: both;
+    overflow: hidden;
+    padding-top: 15px;
+      position:relative
+  }
+  
+  .mobile .header>span {
+    font-size: 24px;
+    min-width: 24px
+  }
+  
+  .mobile .header>.title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 15px
+  }
+  
+  .mobile .header .pull-left {
+    float: left
+  }
+  
+  .mobile .header .pull-right {
+    float: right
+  }
+  .mobile .header .ion-ios-search{
+      z-index:999;
+      position:relative;
+  }
+  
+  .mobile .header .ion-ios-arrow-back {
+    min-width: 25px
+  }
+  
+  .mobile .header .ion-ios-navicon>i {
+    height: 1px;
+    width: 20px;
+    margin-top: 5px;
+    background: #fff;
+    position: relative;
+    display: inline-block
+  }
+  
+  .mobile .header .ion-ios-navicon>i:after,
+  .mobile .header .ion-ios-navicon>i:before {
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: inherit
+  }
+  
+  .mobile .header .ion-ios-navicon>i:before {
+    bottom: 12px
+  }
+  
+  .mobile .header .ion-ios-navicon>i:after {
+    bottom: 6px
+  }
+  .mobile .header .search{
+      right:0;
+      bottom:0;
+      position:absolute;
+  }
+  .mobile .header .search input{
+      width:0;
+      color:#fff;
+      height:24px;
+      border:none;
+      font-size:16px;
+      max-width:150px;
+      font-weight:300;
+      padding-right:30px;
+      font-family:inherit;
+      background:transparent;
+      transition:all .3s ease-in-out 0s;
+      border-bottom:1px solid transparent;
+      -webkit-appearance:textfield;
+  }
+  .mobile .header .search input:focus{
+      outline:none;
+  }
+  .mobile .header .search input::-webkit-search-decoration,
+  .mobile .header .search input::-webkit-search-cancel-button {
+      -webkit-appearance:none;
+  }
+  .mobile .header .search .search-visible{
+      width:100%;
+      border-bottom-color:#aaa;
+  }
+  
+
+  /* main header section */
+
+.opaque-bg {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 380px;
+    padding: 1px 1px 5px 5px;
+  }
+  
+ 
+  .aboutme p {
+    color: white;
+    font-weight: 100;
+    font-size: 27.4px;
+  }
+
+  /* bouncing arrow */
+
+.fa-chevron-down {
+    color: #ff6363 !important;
+    bottom: 10px;
+    margin-left: -30px;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: 1.2s ease;
+  }
+  
+  /* Scroll down indicator (bouncing) */
+  
+  @-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateX(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  
+  @-moz-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -ms-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -ms-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  
+  .bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+  
+  /* about section */
+  
+  /* Skill bars */
+  
+  .container-skillbar {
+    width: 100%;
+    padding-top: 30px;
+    padding-right: 2%;
+    padding-left: 2%;
+    height: auto;
+    overflow: none;
+  }
+  .skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 20%;
+    background: #efefef;
+    height: 30px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+  }
+  
+  .skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    background: #6adcfa;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  
+  .skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  
+  .skillbar-bar {
+    height: 30px;
+    width: 0px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+  
+  .skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.5);
+  }
